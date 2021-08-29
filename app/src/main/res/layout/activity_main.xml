@@ -7,7 +7,7 @@
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
     android:paddingTop="0dp"
-    tools:context=".activity.MainActivity">
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:orientation="vertical"
@@ -20,22 +20,6 @@
             android:layout_height="40dp"
             android:background="@color/colorAccent">
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_gravity="center_vertical">
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -43,26 +27,13 @@
                     android:id="@+id/textView_topTitle"
                     android:textSize="18dp"
                     android:layout_gravity="center_vertical"
-                    android:textAlignment="center" />
-            </LinearLayout>
+                    android:textAlignment="center"
+                    tools:ignore="RtlCompat" />
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"></LinearLayout>
-
-
-            </LinearLayout>
 
         </LinearLayout>
-        <android.support.v4.view.ViewPager
+
+        <androidx.viewpager.widget.ViewPager
             android:id="@+id/myViewPager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -73,7 +44,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:id="@+id/content"></FrameLayout>
-        </android.support.v4.view.ViewPager>
+        </androidx.viewpager.widget.ViewPager>
+
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
